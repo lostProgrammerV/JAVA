@@ -4,31 +4,34 @@ import javax.swing.JOptionPane;
 
 public class ex07 {
 	/*
-	 * Fa�a uma solu��o que alimente um vetor com 10
-	 * valores inteiros e tamb�m que solicite ao usu�rio
-	 * a entrada de dados de um valor inteiro qualquer.
-	 * A solu��o dever� fazer uma busca do valor,
-	 * informado pelo usu�rio, no vetor e imprima a
-	 * posi��o em que este foi encontrado ou se n�o foi
-	 * encontrado.
+	 * Faça um programa que carregue
+	 * os valores das vendas de uma loja no
+	 * primeiro semestre do ano. Considere para tal
+	 * uma matriz [6,4], sendo que são 06 meses e
+	 * 04 semanas por mês. Ao final, mostre na tela:
+	 * ● Total de vendas do semestre
+	 * ● Total vendido em cada mês
 	 */
 	public static void main(String[] args) {
-		int[] vetor = new int[10];
-		int escolha;
+		int[][] vendasMatriz = new int[6][4];
+		int totalVendas = 0;
+		int[] vendasMes = new int[6];
 
-		for (int c = 0; c < 10; c++) {
-			vetor[c] = Integer.parseInt(JOptionPane.showInputDialog("Digite o " + (c + 1) + " valor"));
-			while (vetor[c] < 0) {
-				vetor[c] = Integer
-						.parseInt(JOptionPane.showInputDialog("valores negativos n�o s�o aceitos, digite novamente"));
+		for (int c = 0; c < 6; c++) {
+			for (int j = 0; j < 4; j++) {
+				vendasMatriz[c][j] = Integer.parseInt(JOptionPane.showInputDialog((c + 1) + " mes e semana "
+						+ (j + 1) + " digite as vendas"));
+				while (vendasMatriz[c][j] < 0) {
+					vendasMatriz[c][j] = Integer.parseInt(JOptionPane.showInputDialog("no mes " + (j + 1)
+							+ " e na semana " + (c + 1) + " não foi aceito o numero negativo\ndigite novamente"));
+				}
+				totalVendas += vendasMatriz[c][j];
 			}
-			;
+			vendasMes[c] += totalVendas;
 		}
-		escolha = Integer.parseInt(JOptionPane.showInputDialog("Qual n�mero deseja achar a posi��o"));
-		for (int c = 0; c < 10; c++) {
-			if (escolha == vetor[c]) {
-				System.out.println(escolha + " o valor " + c);
-			}
+		System.out.println("Total de vendas no 1 semestre: " + totalVendas + "\n");
+		for (int c = 0; c < 6; c++) {
+			System.out.println("As vendas do mês " + (c + 1) + " com: " + vendasMes[c] + " no total");
 		}
 	}
 }

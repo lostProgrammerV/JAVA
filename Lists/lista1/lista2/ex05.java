@@ -4,18 +4,18 @@ import javax.swing.JOptionPane;
 
 public class ex05 {
 	/*
-	 * Fa�a um programa que solicite alguns dados dos usu�rios que frequentam um
+	 * Faça um programa que solicite alguns dados dos usuarios que frequentam um
 	 * clube.
-	 * O programa deve solicitar a idade, se a pessoa � fumante ou n�o (1- SIM, 2-
-	 * N�O),
-	 * seu sal�rio l�quido e h� quanto tempo frequenta o clube (em meses).
-	 * O usu�rio dever� digitar �encerrar� quando n�o tiver
+	 * O programa deve solicitar a idade, se a pessoa é fumante ou não (1- SIM, 2-
+	 * NÃO),
+	 * seu salario liquido e hj quanto tempo frequenta o clube (em meses).
+	 * O usuario devere digitar ha encerrar a quando não tiver
 	 * mais pessoas para registrar.
-	 * Como dados de sa�da, o programa deve exibir:
-	 * A m�dia das idades das pessoas;
-	 * A m�dia salarial das pessoas;
-	 * Quantos s�o fumantes e quantos n�o s�o fumantes;
-	 * A porcentagem de pessoas que frequentam o clube h� mais de 03 meses.
+	 * Como dados de salda, o programa deve exibir:
+	 * A media das idades das pessoas;
+	 * A media salarial das pessoas;
+	 * Quantos sao fumantes e quantos nao sao fumantes;
+	 * A porcentagem de pessoas que frequentam o clube ha mais de 03 meses.
 	 */
 	public static void main(String[] args) {
 		String continuar = "";
@@ -44,19 +44,19 @@ public class ex05 {
 			idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade do cliente " + contaClienete));
 			while (idade < 18) {
 				idade = Integer
-						.parseInt(JOptionPane.showInputDialog("N�o s�o permitidos clientes com menores de 18 anos"));
+						.parseInt(JOptionPane.showInputDialog("Não são permitidos clientes com menores de 18 anos"));
 			}
 			somaIdade += idade;
 
 			salario = Integer.parseInt(JOptionPane.showInputDialog("Quanto o cliente " + contaClienete + " ganha ?"));
 			while (salario < 500) {
 				salario = Integer
-						.parseInt(JOptionPane.showInputDialog("N�o � aceito salario negativo ou abaixo de 500"));
+						.parseInt(JOptionPane.showInputDialog("Não é aceito salario negativo ou abaixo de 500"));
 			}
 			somaSalario += salario;
 
 			fumante = Integer.parseInt(
-					JOptionPane.showInputDialog("O cliente " + contaClienete + " � fumante ? (1- SIM, 2- N�O)"));
+					JOptionPane.showInputDialog("O cliente " + contaClienete + " é fumante ? (1- SIM, 2- NÃO)"));
 			if (fumante == 1) {
 				qntFumantes += 1;
 			} else {
@@ -77,8 +77,8 @@ public class ex05 {
 		porcentTempo = (acimaTempo / contaClienete) * 100;
 
 		JOptionPane.showMessageDialog(null,
-				"A m�dia das idades das pessoas: " + mediaIdade + "\nA m�dia salarial das pessoas: " + mediaSalario
-						+ "\nFumantes: " + qntFumantes + "\nN�o fumantes: " + qntNFumantes
+				"A m�dia das idades das pessoas: " + mediaIdade + "\nA média salarial das pessoas: " + mediaSalario
+						+ "\nFumantes: " + qntFumantes + "\nNão fumantes: " + qntNFumantes
 						+ "\nClientes acima de 3 meses: " + porcentTempo + "%");
 	}
 }

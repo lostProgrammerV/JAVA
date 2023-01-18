@@ -1,7 +1,5 @@
 package Lists.lista1;
 
-import java.text.DecimalFormat;
-
 import javax.swing.JOptionPane;
 
 public class ex01 {

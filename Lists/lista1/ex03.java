@@ -18,14 +18,14 @@ public class ex03 {
 		int valor3 = Integer.parseInt(JOptionPane.showInputDialog("Digite o 3 numero"));
 
 		if ((valor == valor2) || (valor2 == valor3) || (valor == valor3) || (valor2 == valor) || (valor3 == valor)) {
-			System.out.println("num�ros iguais n�o s�o aceitos, tente novamente");
+			System.out.println("numúros iguais não são aceitos, tente novamente");
 		} else if ((valor < valor2) && (valor < valor3)) {
 			menorV = valor;
-			System.out.println("O menor valor � " + menorV);
+			System.out.println("O menor valor é " + menorV);
 		} else if ((valor2 < valor) && (valor2 < valor3)) {
-			System.out.println("O menor valor � " + menorV);
+			System.out.println("O menor valor é " + menorV);
 		} else if ((valor3 < valor) && (valor3 < valor2)) {
-			System.out.println("O menor valor � " + menorV);
+			System.out.println("O menor valor é " + menorV);
 		}
 	}
 }

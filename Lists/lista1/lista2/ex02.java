@@ -5,8 +5,8 @@ import javax.swing.JOptionPane;
 public class ex02 {
 	/*
 	 * Escreva um programa que receba quatro notas do aluno e as insira em um vetor.
-	 * Depois, calcule a m�dia aritm�tica entre as quatro notas e
-	 * mostre o "conceito" do aluno conforme as instru��es:
+	 * Depois, calcule a media aritmetica entre as quatro notas e
+	 * mostre o "conceito" do aluno conforme as instruções:
 	 * 9.0 ou maior = Conceito A
 	 * entre 8.0 e 8.9 = Conceito B
 	 * entre 7.0 e 7.9 = Conceito C
