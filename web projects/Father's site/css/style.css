@@ -1,0 +1,47 @@
+body {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-family: Work Sans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-transform: none;
+    color: #363636;
+    text-align: center;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.item {
+    background-color: gray;
+    opacity: 0.5;
+  }
+  
+  .highlighted {
+    background-color: yellow;
+    font-weight: bold;
+    opacity: 1;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  label, input, textarea {
+    margin: 0.5rem;
+  }
+
+@media screen and (min-width: 640px){
+    .ancillary-header-branding-position-top-left [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-tagline-position-top-left.has-tagline [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-primary-nav-position-top-left.has-primary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-secondary-nav-position-top-left.has-secondary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-social-position-top-left.has-social [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-search-position-top-left [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-cart-position-top-left.has-cart [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-account-position-top-left.has-user-accounts [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-branding-position-top-center [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-tagline-position-top-center.has-tagline [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-primary-nav-position-top-center.has-primary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-secondary-nav-position-top-center.has-secondary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-social-position-top-center.has-social [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-search-position-top-center [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-cart-position-top-center.has-cart [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-account-position-top-center.has-user-accounts [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-branding-position-top-right [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-tagline-position-top-right.has-tagline [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-primary-nav-position-top-right.has-primary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-secondary-nav-position-top-right.has-secondary-nav [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-social-position-top-right.has-social [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-search-position-top-right [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-cart-position-top-right.has-cart [data-nc-base="header"] [data-nc-group="top"], .ancillary-header-account-position-top-right.has-user-accounts [data-nc-base="header"] [data-nc-group="top"] {
+        display: flex;
+    }
+}
