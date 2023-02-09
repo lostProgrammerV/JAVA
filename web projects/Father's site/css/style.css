@@ -31,7 +31,13 @@ nav {
 #titulo{
   position: relative;
   bottom: 220px;
-  left: 14%;
+  left: 19%;
+}
+
+#titulo2 {
+  position: relative;
+  bottom: 220px;
+  left: 19%;
 }
 
 .dropdown {
@@ -90,9 +96,13 @@ nav {
 .miniBio {
   position: relative;
   font-size: 1.4rem;
-  width: 29%;
+  width: 23%;
   left: 51.4%;
   bottom: 260px;
+}
+
+p{
+  font-family: arial, sans-serif;
 }
 
 h2 {
@@ -101,12 +111,14 @@ h2 {
 
 .how-prof {
   position: relative;
-  width: 30%;
-  left: 14%;
-  bottom: 239.9px;
+  width: 27%;
+  left: 19%;
+  bottom: 229.9px;
 }
 
-p{
-  font-family: arial, sans-serif;
-  
+.how-ment {
+  position: relative;
+  width: 24%;
+  left: 19%;
+  bottom: 229.9px;
 }
